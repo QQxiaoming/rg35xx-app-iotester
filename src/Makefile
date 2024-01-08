@@ -1,7 +1,7 @@
 SRCS_DIR := /src
 BUILD_DIR := /out
 
-TARGET = main
+TARGET = iotester
 C_SOURCES =  \
 		${wildcard $(SRCS_DIR)/*.c}
 CPP_SOURCES =  \
