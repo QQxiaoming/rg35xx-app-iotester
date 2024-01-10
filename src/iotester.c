@@ -20,8 +20,13 @@
 
 static const int SDL_WAKEUPEVENT = SDL_USEREVENT+1;
 
+#if 0
 #define system(x) printf(x); printf("\n")
 #define DBG(x) printf("%s:%d %s %s\n", __FILE__, __LINE__, __func__, x);
+#else
+#define system(x) do{}while(0)
+#define DBG(x) do{}while(0)
+#endif
 
 #define WIDTH  640
 #define HEIGHT 480
