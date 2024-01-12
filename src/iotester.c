@@ -41,7 +41,7 @@ static const int SDL_WAKEUPEVENT = SDL_USEREVENT+1;
 #define BTN_R2			SDLK_k
 #define BTN_START		SDLK_m
 #define BTN_SELECT		SDLK_n
-#define BTN_POWER		SDLK_POWER
+#define BTN_POWER		SDLK_p
 #define BTN_UP			SDLK_w
 #define BTN_DOWN		SDLK_s
 #define BTN_LEFT		SDLK_q
