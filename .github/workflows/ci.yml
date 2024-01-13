@@ -37,7 +37,14 @@ jobs:
       - name: tar_release
         shell: bash -l {0}
         run: |
-          tar -czf release.tar.gz out/j2k.so out/iotester.elf src/res
+          cp out/iotester.elf iotester/
+          cp out/j2k.so iotester/
+          cp src/res/backdrop.png iotester/
+          cp scripts/sw.sh iotester/
+          cp scripts/iotester.sh iotester/
+          cp scripts/IO测试.sh iotester/
+          cp scripts/IO测试.sh ./
+          tar -czf release.tar.gz ./iotester ./Imgs ./IO测试.sh
 
       - name: Upload build asserts
         uses: actions/upload-artifact@v4
