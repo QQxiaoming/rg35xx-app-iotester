@@ -37,6 +37,7 @@ jobs:
       - name: tar_release
         shell: bash -l {0}
         run: |
+          mkdir iotester
           cp out/iotester.elf iotester/
           cp out/j2k.so iotester/
           cp src/res/backdrop.png iotester/
